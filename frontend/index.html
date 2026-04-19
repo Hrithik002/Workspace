@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SignUp Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero-panel">
+      <div class="brand">
+        <div class="brand-mark">S</div>
+        <div>
+          <h1>SignUp Page</h1>
+          <p>Secure signup and login.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="auth-panel">
+      <div class="tabs" role="tablist" aria-label="Authentication mode">
+        <button class="tab active" id="signupTab" type="button" aria-selected="true">Sign Up</button>
+        <button class="tab" id="loginTab" type="button" aria-selected="false">Login</button>
+      </div>
+
+      <div class="message" id="messageBox" aria-live="polite"></div>
+
+      <form id="signupForm" class="form-card" novalidate>
+        <div class="form-grid two-col">
+          <div class="field">
+            <label for="firstName">First name</label>
+            <input id="firstName" name="firstName" type="text" placeholder="John" autocomplete="given-name" />
+            <small class="error" data-error-for="firstName"></small>
+          </div>
+          <div class="field">
+            <label for="lastName">Last name</label>
+            <input id="lastName" name="lastName" type="text" placeholder="Doe" autocomplete="family-name" />
+            <small class="error" data-error-for="lastName"></small>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="signupEmail">Email</label>
+          <input id="signupEmail" name="email" type="email" placeholder="john@example.com" autocomplete="email" />
+          <small class="error" data-error-for="signupEmail"></small>
+        </div>
+
+        <div class="form-grid two-col">
+          <div class="field">
+            <label for="signupPassword">Password</label>
+            <input id="signupPassword" name="password" type="password" placeholder="Create a strong password" autocomplete="new-password" />
+            <small class="error" data-error-for="signupPassword"></small>
+          </div>
+          <div class="field">
+            <label for="confirmPassword">Confirm password</label>
+            <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Repeat your password" autocomplete="new-password" />
+            <small class="error" data-error-for="confirmPassword"></small>
+          </div>
+        </div>
+
+        <button type="submit" class="primary-btn">Create account</button>
+      </form>
+
+      <form id="loginForm" class="form-card hidden" novalidate>
+        <div class="field">
+          <label for="loginEmail">Email</label>
+          <input id="loginEmail" name="email" type="email" placeholder="john@example.com" autocomplete="email" />
+          <small class="error" data-error-for="loginEmail"></small>
+        </div>
+
+        <div class="field">
+          <label for="loginPassword">Password</label>
+          <input id="loginPassword" name="password" type="password" placeholder="Your password" autocomplete="current-password" />
+          <small class="error" data-error-for="loginPassword"></small>
+        </div>
+
+        <button type="submit" class="primary-btn">Login</button>
+      </form>
+
+      <section id="welcomeView" class="welcome-card hidden" aria-live="polite">
+        <div class="welcome-badge">✓</div>
+        <h2 id="welcomeTitle">Welcome</h2>
+        <p id="welcomeMessage">You are now signed in.</p>
+        <button id="logoutButton" class="secondary-btn" type="button">Back to login</button>
+      </section>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
