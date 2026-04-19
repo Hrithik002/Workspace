@@ -1,0 +1,11 @@
+C:\Users\hrith\Desktop\SignUpPage\backend\src\main\java\com\signuppage\config\PasswordConfig.java
+C:\Users\hrith\Desktop\SignUpPage\backend\src\main\java\com\signuppage\config\WebConfig.java
+C:\Users\hrith\Desktop\SignUpPage\backend\src\main\java\com\signuppage\controller\AuthController.java
+C:\Users\hrith\Desktop\SignUpPage\backend\src\main\java\com\signuppage\dto\AuthResponse.java
+C:\Users\hrith\Desktop\SignUpPage\backend\src\main\java\com\signuppage\dto\LoginRequest.java
+C:\Users\hrith\Desktop\SignUpPage\backend\src\main\java\com\signuppage\dto\RegisterRequest.java
+C:\Users\hrith\Desktop\SignUpPage\backend\src\main\java\com\signuppage\exception\GlobalExceptionHandler.java
+C:\Users\hrith\Desktop\SignUpPage\backend\src\main\java\com\signuppage\model\UserAccount.java
+C:\Users\hrith\Desktop\SignUpPage\backend\src\main\java\com\signuppage\repository\UserRepository.java
+C:\Users\hrith\Desktop\SignUpPage\backend\src\main\java\com\signuppage\service\AuthService.java
+C:\Users\hrith\Desktop\SignUpPage\backend\src\main\java\com\signuppage\SignUpApplication.java
